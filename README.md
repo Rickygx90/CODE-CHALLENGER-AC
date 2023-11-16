@@ -1,8 +1,15 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project uses Google services to find an address using a text string (Place API) in conjunction with the @react-google-maps/api library designed for ReactJS, the tailwindcss library was used for the styles.
 
-Currently, two official plugins are available:
+To run this proyect you need make some steps:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.- You need to have node js v16 or higher installed
+
+2.- Clone the repositorie in your local environment
+
+3.- Run the “npm install” command to install all the dependencies
+
+4.- Create an .env file with a Google Api Key (VITE_GOOGLE_APP_API_KEY=YourApiKey) to use Google services
+
+5.- Run the "npm run dev" command to run the project in developer mode
