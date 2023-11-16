@@ -1,9 +1,9 @@
-import { InputGoogle } from './Components/InputGoogle'
+import { InputSearchAddress } from './Components/InputSearchAddress'
 
 function App() {
 	return (
-		<div className='m-16 bg-slate-100 flex justify-center'>
-			<div className='flex flex-col m-8 w-1/4'>
+		<div className='m-12 h-full bg-slate-100 flex justify-center'>
+			<div className='flex flex-col m-5 desktop:w-1/2 tablet:w-full'>
 				<h2 className='text-4xl m-8 font-medium flex justify-center text-center'>
 					Where are you located?
 				</h2>
@@ -15,7 +15,7 @@ function App() {
 						We won&apos;t share your address with your ex (or whoever).
 					</p>
 				</div>
-				<InputGoogle />
+				<InputSearchAddress />
 			</div>
 		</div>
 	)
