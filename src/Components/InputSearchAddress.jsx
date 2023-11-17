@@ -7,7 +7,7 @@ import {
 } from '@react-google-maps/api'
 import { AddressUpdated } from './AddressUpdated'
 import { OutOfDeliveryArea } from './OutOfDeliveryArea'
-import { validatePostalCode } from '../../utils/functions'
+import { validatePostalCode } from '../Utils/functions'
 const apiKey = import.meta.env.VITE_GOOGLE_APP_API_KEY
 const libraries = ['places']
 
@@ -22,7 +22,6 @@ export const InputSearchAddress = () => {
 
 	const onPlaceChanged = () => {
 		if (autocomplete !== null) {
-			console.log(autocomplete.getPlace())
 			const matchesZipCode = validatePostalCode(autocomplete.getPlace()) // Function that sends object with address information and check if it exists in "zips permitidos.txt"
 			if (matchesZipCode) setShowAddressUpdated(true)
 			// Shows "Address updated" popup if zip code was found in "zips permitidos.txt"
